@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+    
+
+}
+
+/*---------------------------HEADER------------------------------*/
+
+.header{
+    
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('./images/fondoWeb.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(136, 136, 136, 0.3);
+}
+
+nav img{
+    width: 150px;
+    border-radius: 1em;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: grey;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.container a{
+    background: transparent;
+    padding: 1em;
+    color: #fff;
+}
+
+.container::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: grey;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.container:hover::after{
+    width: 45%;
+}
+
+.container .cancion{
+    margin-top: 5.5px;
+}
+
+/*---------------------------/HEADER------------------------------*/
+
+/*---------------------------HOME------------------------------*/
+
+.rows{
+    font-size: 200%;   
+}
+
+.rows .row1 .col11 .link 
+{
+    color: rgb(0, 0, 0);
+}
+.rows .row1 .col12 .link 
+{
+    color: rgb(0, 0, 0);
+}
+.rows .row2 .col21 .link 
+{
+    color: rgb(0, 0, 0);
+}
+.rows .row2 .col22 .link 
+{
+    color: rgb(0, 0, 0);
+}
+
+.rows p{
+    font-family: 'Ms Madi', cursive;
+    font-weight: 600;
+}
+
+.row1{
+    /*width: 45%;
+    height: 30%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: grey;*/
+    margin-top: 4.5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+    
+}
+
+.col11{
+    flex-basis: 31%;
+    background: rgb(252, 255, 80, 0.6);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 100px 12px;
+    box-sizing: border-box;
+    margin-left: 250px;
+}
+
+.col12{
+    flex-basis: 31%;
+    background: rgba(179, 255, 93, 0.6);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 100px 12px;
+    box-sizing: border-box;
+    margin-right: 250px;
+    
+}
+
+.row2{
+    /*width: 45%;
+    height: 30%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: grey;*/
+    margin-top: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.col21{
+    flex-basis: 31%;
+    background: rgba(179, 255, 93, 0.6);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 100px 12px;
+    box-sizing: border-box;
+    margin-left: 250px;
+    
+}
+
+.col22{
+    flex-basis: 31%;
+    background: rgb(252, 255, 80, 0.6);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 100px 12px;
+    box-sizing: border-box;
+    margin-right: 250px;
+    
+}
+
+/*---------------------------/HOME------------------------------*/
+
+/*---------------------------PHOTO DUMP------------------------------*/
+
+.dumpGaleria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-right: 100px;
+    grid-gap: 80px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.dumpGaleria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 94, 220, 0.7);
+    width: 600px;
+    border-radius: 7.5px;
+}
+
+.dumpGaleria div img {
+    width: 600px;
+    vertical-align: top;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 7.5px;
+    margin-top: 75px;
+    scale: 80%;
+}
+
+.dumpGaleria img{
+    width: 600px;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7.5px;
+}
+
+/*---------------------------/PHOTO DUMP------------------------------*/
+
+/*---------------------------BOOMBASTIC------------------------------*/
+
+.boombasticGaleria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-right: 125px;
+    grid-gap: 80px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.boombasticGaleria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 94, 220, 0.7);
+    width: 600px;
+    border-radius: 7.5px;
+}
+
+.boombasticGaleria img{
+    width: 600px;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7.5px;
+}
+
+.boombasticLogo{
+    margin-top: -150px;
+    scale: 50%;
+}
+
+/*---------------------------/BOOMBASTIC------------------------------*/
+
+/*---------------------------SCREENSHOTS------------------------------*/
+
+.screenshotsGaleria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 95%;
+    margin: auto;
+    margin-top: -10px;
+    margin-left: 75px;
+    grid-gap: 80px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.screenshotsGaleria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 94, 220, 0.7);
+    width: 200px;
+    border-radius: 7.5px;
+}
+
+.screenshotsGaleria img{
+    width: 200px;
+    vertical-align: top;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 7.5px;
+}
+
+/*---------------------------/SCREENSHOTS------------------------------*/
+
+/*---------------------------AESTHETIC------------------------------*/
+
+.aestheticGaleria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-right: 90px;
+    grid-gap: 80px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.aestheticGaleria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 94, 220, 0.7);
+    width: 500px;
+    border-radius: 7.5px;
+}
+
+.aestheticGaleria img{
+    width: 500px;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7.5px;
+}
+
+/*---------------------------/AESTHETIC------------------------------*/
