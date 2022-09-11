@@ -11,6 +11,7 @@
     </head>
 
     <body>
+        
         <section class="header">
             <nav>
                 <a href="home.html"><img src="images/aleLogo.png"></a>
@@ -30,23 +31,34 @@
                 </div>
             </nav>
             <section class="boombasticGaleria">
-                <a href="#image1">
+                <a href="#image1" id="boom1">
                     <img src="images/Boombastic1.jpg" alt="">
                 </a>
-                <a href="#image2">
+                <a href="#image2" id="boom2">
                     <img src="images/Boombastic2.jpg" alt="">
                 </a>
-                <a href="#image3">
+                <a href="#image3" id="boom3">
                     <img src="images/Boombastic3.jpg" alt="">
                 </a>
-                <a href="#image4">
+                <a href="#image4" id="boom4">
                     <img src="images/Boombastic4.jpg" alt="">
                 </a>
             </section>
+            <a href="#BoombasticVideo" id="boom">
             <div class="boombasticLogo">
                 <img src="images/boombasticLogo.png" alt="">
             </div>
+        </a>
         </section>
+        <div class="video-overlay" id="video-overlay">
+            <div class="video-popup" id="video-popup">
+                <a id="btn-cerrar-video" class="btn-cerrar-video"><i class="fas fa-times"></i></a>
+                <div class="yt">
+                    <iframe width="1425" height="800" src="https://www.youtube.com/embed/koD7tut0WmA" title="2nd anniversary" frameborder="0" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="script.js"></script>
 </html>
